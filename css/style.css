@@ -22,7 +22,7 @@
     background-position: center;
     background-size: cover;
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
         "month1 month2 month3"
@@ -31,4 +31,18 @@
         "month10 month11 month12"
     ;
 
+}
+
+.image {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #777;
+    transition: opacity 3s;
 }
